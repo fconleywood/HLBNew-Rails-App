@@ -1,0 +1,12 @@
+
+<h1>This is an Image...</h1>
+
+<%= link_to "Edit", edit_image_url %>
+
+<%= link_to "Delete", delete_image_url(@image), method: :delete %>
+
+<%= link_to "Back to Homepage", images_url %>
+
+<p> <%= @image.title %> </p>
+<p> <%= @image.author %> </p>
+<img src= "<%= @image.url %>" >
